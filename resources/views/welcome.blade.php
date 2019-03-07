@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    ADSI 151 bienvenidos todos
+                    ADSI 151 bienvenidos todos como estan en este dia hoy 
                 </div>
 
                 <div class="links">
