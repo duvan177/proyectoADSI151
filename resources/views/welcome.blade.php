@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    ADSI 151
+                    ADSI 151 bienvenidos
                 </div>
 
                 <div class="links">
