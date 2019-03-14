@@ -13,10 +13,10 @@
                         <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-bag"></i>Componentes</a>
                         <ul class="nav-dropdown-items">
                             <li @click=" menu=1"  class="nav-item">
-                                <a class="nav-link" href="#"><i class="icon-bag"></i> Categorías</a>
+                                <a class="nav-link" href="#"><i class="icon-bag"></i> control</a>
                             </li>
                             <li @click="menu=2"  class="nav-item">
-                                <a class="nav-link" href="#"><i class="icon-bag"></i> Control</a>
+                                <a class="nav-link" href="#"><i class="icon-bag"></i> Gestion</a>
                             </li>
                         </ul>
                     </li>
