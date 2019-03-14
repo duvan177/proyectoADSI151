@@ -81,7 +81,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    ADSI 151 bienvenidos todos
+                    BIENVENIDOS ADSI 151 LOS  MEJORES !!!
+                    holaaa!
                 </div>
 
                 <div class="links">
