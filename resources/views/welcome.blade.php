@@ -81,8 +81,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
+<<<<<<< HEAD
                     BIENVENIDOS ADSI 151 LOS  MEJORES !!!
                     holaaa!
+=======
+                    ADSI 151 bienvenidos todos como estan en este dia hoy 
+>>>>>>> ad77dd14a72eef0ad7b7bbbce408c0d0e8c67eab
                 </div>
 
                 <div class="links">
