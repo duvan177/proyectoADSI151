@@ -23,6 +23,7 @@ window.Vue = require('vue');
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
 Vue.component('animacion', require('./components/componenteAnimate.vue').default);
+Vue.component('monitoreo', require('./components/Monitoreo.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

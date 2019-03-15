@@ -23,7 +23,7 @@
         </template>
         <template v-if="menu == 3">
         
-                
+                <monitoreo></monitoreo>
         </template>
         <template v-if="menu == 4">
                 <h2>menu del contenido 4 </h2>

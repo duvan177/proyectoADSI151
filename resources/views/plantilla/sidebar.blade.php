@@ -24,7 +24,7 @@
                         <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-wallet"></i> Monitoreo</a>
                         <ul class="nav-dropdown-items">
                             <li @click="menu=3"  class="nav-item">
-                                <a class="nav-link" href="#"><i class="icon-wallet"></i> Ingresos</a>
+                                <a class="nav-link" href="#"><i class="icon-wallet"></i> Estados</a>
                             </li>
                             <li @click="menu=4"  class="nav-item">
                                 <a class="nav-link" href="#"><i class="icon-notebook"></i> Alertas</a>
@@ -69,25 +69,9 @@
                         <a class="nav-link" href="#"><i class="icon-info"></i> Acerca de...<span class="badge badge-info">IT</span></a>
                     </li>
 
-                  <!--- inicio de usuario --->
+                  
 
-                      <li class="nav-item nav-dropdown">
-                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-pie-chart"></i> usuario {{ Auth::user()->name }}</a>
-                        <ul class="nav-dropdown-items">
-                           
-                            <li  onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();" class="nav-item">
-                                <a class="nav-link" href="{{ route('logout') }}"><i class="icon-chart"
-                                
-                                ></i> Cerrar Session</a>
-                            </li>
-                        </ul>
-                    </li>
-
-
-                    <!--- fin de usuario --->
-
-                    
+                     
                 </ul>
             </nav>
             <button class="sidebar-minimizer brand-minimizer" type="button"></button>
