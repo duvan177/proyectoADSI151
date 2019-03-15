@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
+        <link href="css/plantilla.css" rel="stylesheet">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -81,12 +82,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-<<<<<<< HEAD
-                    BIENVENIDOS ADSI 151 LOS  MEJORES !!!
-                    holaaa!
-=======
-                    ADSI 151 bienvenidos todos como estan en este dia hoy 
->>>>>>> ad77dd14a72eef0ad7b7bbbce408c0d0e8c67eab
+proyecto
                 </div>
 
                 <div class="links">

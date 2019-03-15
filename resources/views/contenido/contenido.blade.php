@@ -6,6 +6,7 @@
 
 <template v-if="menu == 0">
 
+<animacion></animacion>
         
 </template>
 

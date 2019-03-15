@@ -37652,7 +37652,7 @@ var staticRenderFns = [
         _c("div", { staticClass: "card" }, [
           _c("div", { staticClass: "card-header" }),
           _vm._v(" "),
-          _c("h2", [_vm._v("componente visual")])
+          _c("h2", [_vm._v("componente  escritorio")])
         ])
       ])
     ])
