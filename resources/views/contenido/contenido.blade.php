@@ -35,7 +35,7 @@
                 <h2>menu del contenido 6 </h2>
         </template>
         <template v-if="menu == 7">
-                <h2>menu del contenido 7 </h2>
+                <perfil></perfil>
         </template>
         <template v-if="menu == 8">
                 <h2>menu del contenido 8 </h2>
