@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\ProgramacionComponente;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\PerfilAlarma;
+
 
 class ProgramacionComponenteController extends Controller
 {
@@ -13,9 +16,14 @@ class ProgramacionComponenteController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
+    
     {
+    
+        
         $programacionxcomponente = ProgramacionComponente::all();
-        return $programacionxcomponente;
+        
+        
+        return $programacionxcomponente -> where('idPerfilAlarma','=','33'); 
     }
 
     /**
