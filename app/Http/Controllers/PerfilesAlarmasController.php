@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\PerfilesAlarmas;
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Auth;
 class PerfilesAlarmasController extends Controller
 {
     /**
@@ -14,8 +15,9 @@ class PerfilesAlarmasController extends Controller
      */
     public function index()
     {
+        $id = Auth::id();
         $perfilesyalarmas = PerfilesAlarmas::all();
-        return $perfilesyalarmas->where('idUsuario','=',5);
+        return $perfilesyalarmas->where('idUsuario','=',$id);
     }
 
     /**
