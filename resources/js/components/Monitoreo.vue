@@ -12,14 +12,14 @@
       <!-- Ejemplo de tabla Listado -->
       <div class="card">
         <div class="card-header">
-          <i class="fa fa-align-justify"></i> 
+          <i class="fa fa-align-justify"></i>
+         
           <button
             type="button"
             class="btn btn-secondary"
-            data-toggle="modal"
-            data-target="#modalNuevo"
-          >
-            <i class="icon-plus"></i>&nbsp;Nuevo
+             
+            >
+            <i class="icon-plus"></i>&nbsp;Gestion
           </button>
         </div>
         <div class="card-body">
@@ -48,14 +48,11 @@
               <tr>
                 <th>Opciones</th>
                 <th>Nombre</th>
-                <th>Descripción</th>
                 <th>Estado</th>
               </tr>
             </thead>
             <tbody>
-              <div >
-
-              </div>
+              <div></div>
               <tr v-for="programacionComponente in arrayEstado" :key="programacionComponente.id">
                 <td>
                   <button
@@ -65,12 +62,12 @@
                     data-target="#modalNuevo"
                   >
                     <i class="icon-pencil"></i>
-                  </button> &nbsp;
-                
+                  </button>
+
+                   &nbsp;
                 </td>
-                <td v-text="programacionComponente.idComponente"></td>
-                <td v-text="programacionComponente.idPerfilAlarma"></td>
-                
+                <td v-text="programacionComponente.nomCompo"></td>
+
                 <td>
                   <div v-if="programacionComponente.EstadoProgramado == 'Encendido'">
                     <span class="badge badge-success">Encendido</span>
@@ -85,38 +82,22 @@
                     <span class="badge badge-danger">Cerrada</span>
                   </div>
                   <div v-else-if="programacionComponente.idAtributoXtipo == 4 ">
-                    <span class="badge badge-success" v-text="programacionComponente.EstadoProgramado"></span>
+                    <span
+                      class="badge badge-success"
+                      v-text="programacionComponente.EstadoProgramado"
+                    ></span>
                   </div>
-                   <div v-else-if="programacionComponente.idAtributoXtipo == '8'">
-                    <span class="badge badge-danger" v-text="programacionComponente.EstadoProgramado"></span>
+                  <div v-else-if="programacionComponente.idAtributoXtipo == '8'">
+                    <span
+                      class="badge badge-danger"
+                      v-text="programacionComponente.EstadoProgramado"
+                    ></span>
                   </div>
-                  
                 </td>
               </tr>
             </tbody>
           </table>
-          <nav>
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link" href="#">Ant</a>
-              </li>
-              <li class="page-item active">
-                <a class="page-link" href="#">1</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">2</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">3</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">4</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">Sig</a>
-              </li>
-            </ul>
-          </nav>
+         
         </div>
       </div>
       <!-- Fin ejemplo de tabla Listado -->
@@ -188,7 +169,6 @@
       style="display: none;"
       aria-hidden="true"
     >
-     
       <!-- /.modal-dialog -->
     </div>
     <!-- Fin del modal Eliminar -->
@@ -202,17 +182,11 @@ export default {
       nombre: " ",
       estado: " ",
       arrayEstado: []
-
     };
   },
 
   methods: {
-
-      idUse(){
-       
-      },
-
-
+    idUse() {},
 
     listarCompo() {
       let me = this;
@@ -221,7 +195,6 @@ export default {
         .get("/programacionComponente")
         .then(function(response) {
           me.arrayEstado = response.data;
-        
         })
         .catch(function(error) {
           // handle error

@@ -2182,27 +2182,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -38023,17 +38002,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("td", {
                         domProps: {
-                          textContent: _vm._s(
-                            programacionComponente.idComponente
-                          )
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("td", {
-                        domProps: {
-                          textContent: _vm._s(
-                            programacionComponente.idPerfilAlarma
-                          )
+                          textContent: _vm._s(programacionComponente.nomCompo)
                         }
                       }),
                       _vm._v(" "),
@@ -38100,14 +38069,12 @@ var render = function() {
                 2
               )
             ]
-          ),
-          _vm._v(" "),
-          _vm._m(5)
+          )
         ])
       ])
     ]),
     _vm._v(" "),
-    _vm._m(6),
+    _vm._m(5),
     _vm._v(" "),
     _c("div", {
       staticClass: "modal fade",
@@ -38146,15 +38113,8 @@ var staticRenderFns = [
       _vm._v(" "),
       _c(
         "button",
-        {
-          staticClass: "btn btn-secondary",
-          attrs: {
-            type: "button",
-            "data-toggle": "modal",
-            "data-target": "#modalNuevo"
-          }
-        },
-        [_c("i", { staticClass: "icon-plus" }), _vm._v(" Nuevo\n        ")]
+        { staticClass: "btn btn-secondary", attrs: { type: "button" } },
+        [_c("i", { staticClass: "icon-plus" }), _vm._v(" Gestion\n        ")]
       )
     ])
   },
@@ -38212,8 +38172,6 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("th", [_vm._v("Nombre")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Descripción")]),
-        _vm._v(" "),
         _c("th", [_vm._v("Estado")])
       ])
     ])
@@ -38235,51 +38193,7 @@ var staticRenderFns = [
         },
         [_c("i", { staticClass: "icon-pencil" })]
       ),
-      _vm._v("  \n              \n              ")
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("nav", [
-      _c("ul", { staticClass: "pagination" }, [
-        _c("li", { staticClass: "page-item" }, [
-          _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
-            _vm._v("Ant")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("li", { staticClass: "page-item active" }, [
-          _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
-            _vm._v("1")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("li", { staticClass: "page-item" }, [
-          _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
-            _vm._v("2")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("li", { staticClass: "page-item" }, [
-          _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
-            _vm._v("3")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("li", { staticClass: "page-item" }, [
-          _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
-            _vm._v("4")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("li", { staticClass: "page-item" }, [
-          _c("a", { staticClass: "page-link", attrs: { href: "#" } }, [
-            _vm._v("Sig")
-          ])
-        ])
-      ])
+      _vm._v("\n\n                  \n              ")
     ])
   },
   function() {
@@ -38678,7 +38592,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "modal-content" }, [
               _c("div", { staticClass: "modal-header" }, [
                 _c("h4", { staticClass: "modal-title" }, [
-                  _vm._v("Agregar categoría")
+                  _vm._v("Editar Perfil")
                 ]),
                 _vm._v(" "),
                 _c(
@@ -38718,7 +38632,7 @@ var staticRenderFns = [
                           staticClass: "col-md-3 form-control-label",
                           attrs: { for: "text-input" }
                         },
-                        [_vm._v("Nombre")]
+                        [_vm._v("nombre")]
                       ),
                       _vm._v(" "),
                       _c("div", { staticClass: "col-md-9" }, [
@@ -38730,11 +38644,7 @@ var staticRenderFns = [
                             name: "nombre",
                             placeholder: "Nombre de categoría"
                           }
-                        }),
-                        _vm._v(" "),
-                        _c("span", { staticClass: "help-block" }, [
-                          _vm._v("(*) Ingrese el nombre de la categoría")
-                        ])
+                        })
                       ])
                     ]),
                     _vm._v(" "),

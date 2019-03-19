@@ -3,9 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\ProgramacionComponente;
+
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\PerfilAlarmas;
+use App\PerfilesAlarmas;
+use Illuminate\Support\Facades\DB;
+
+
 
 
 class ProgramacionComponenteController extends Controller
@@ -16,16 +21,21 @@ class ProgramacionComponenteController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    
+
     {
-    
-        
-        
-       $programacionxcomponente = ProgramacionComponente::all();
-        
-       $resultado = $programacionxcomponente -> where('idPerfilAlarma','=','38');
-       
-        return  $resultado ; 
+
+        $idPerfil = DB:: table('programacionxcomponente')
+        ->join('perfilesyalarmas','perfilesyalarmas.id','=','programacionxcomponente.idPerfilAlarma')
+        ->join('componentes','componentes.id','=','programacionxcomponente.idComponente')
+        ->select('idComponente','idPerfilAlarma','EstadoProgramado','idAtributoXtipo','perfilesyalarmas.nombre','componentes.nomCompo')
+        ->where('perfilesyalarmas.idUsuario','=',Auth::id())
+        ->get();
+
+       // $programacionxcomponente = ProgramacionComponente::all();
+
+        //$resultado = $programacionxcomponente->where ('idPerfilAlarma','=',38);
+
+        return $idPerfil;
     }
 
     /**
