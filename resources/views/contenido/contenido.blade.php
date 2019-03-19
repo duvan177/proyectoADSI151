@@ -6,7 +6,7 @@
 
 <template v-if="menu == 0">
 
-<animacion></animacion>
+
         
 </template>
 
@@ -26,7 +26,7 @@
                 <monitoreo></monitoreo>
         </template>
         <template v-if="menu == 4">
-                <h2>menu del contenido 4 </h2>
+            <Example></Example>
         </template>
         <template v-if="menu == 5">
                 <h1>contenido 5</h1>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\PerfilAlarma;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PerfilAlarmaController extends Controller
 {
@@ -13,8 +14,13 @@ class PerfilAlarmaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
+
     {
-        //
+
+        
+
+        $perfilAlarma = PerfilAlarma::all(); 
+        return $perfilAlarma -> where('id','=',4);   
     }
 
     /**
@@ -82,4 +88,6 @@ class PerfilAlarmaController extends Controller
     {
         //
     }
+
+    
 }

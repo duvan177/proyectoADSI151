@@ -53,6 +53,9 @@
               </tr>
             </thead>
             <tbody>
+              <div >
+
+              </div>
               <tr v-for="programacionComponente in arrayEstado" :key="programacionComponente.id">
                 <td>
                   <button
@@ -63,14 +66,7 @@
                   >
                     <i class="icon-pencil"></i>
                   </button> &nbsp;
-                  <button
-                    type="button"
-                    class="btn btn-danger btn-sm"
-                    data-toggle="modal"
-                    data-target="#modalEliminar"
-                  >
-                    <i class="icon-trash"></i>
-                  </button>
+                
                 </td>
                 <td v-text="programacionComponente.idComponente"></td>
                 <td v-text="programacionComponente.idPerfilAlarma"></td>
@@ -192,24 +188,7 @@
       style="display: none;"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-danger" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Eliminar Categoría</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>Estas seguro de eliminar la categoría?</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-danger">Eliminar</button>
-          </div>
-        </div>
-        <!-- /.modal-content -->
-      </div>
+     
       <!-- /.modal-dialog -->
     </div>
     <!-- Fin del modal Eliminar -->
@@ -223,25 +202,14 @@ export default {
       nombre: " ",
       estado: " ",
       arrayEstado: []
+
     };
   },
 
   methods: {
 
       idUse(){
-          
-         axios.get("/programacionComponente").then(function(response) {
-             
-         
-        })
-        .catch(function(error) {
-          // handle error
-          console.log(error);
-        })
-        .then(function() {
-          // always executed
-        });
-      
+       
       },
 
 
@@ -253,6 +221,7 @@ export default {
         .get("/programacionComponente")
         .then(function(response) {
           me.arrayEstado = response.data;
+        
         })
         .catch(function(error) {
           // handle error

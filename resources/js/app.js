@@ -22,7 +22,7 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
-//Vue.component('animacion', require('./components/componenteAnimate.vue').default);
+Vue.component('Example', require('./components/ComponenteAnimate.vue').default);
 Vue.component('monitoreo', require('./components/Monitoreo.vue').default);
 Vue.component('perfil', require('./components/perfiles.vue').default);
 /**

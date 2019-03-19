@@ -6,10 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class ProgramacionComponente extends Model
 {
-    
 
-protected $table = 'programacionxcomponente';
 
-protected $fillable = ['idComponent','idPerfilAlarma','EstadoProgramado'];
+    protected $table = 'programacionxcomponente';
 
+    protected $fillable = ['idComponent', 'idPerfilAlarma', 'EstadoProgramado'];
 }
