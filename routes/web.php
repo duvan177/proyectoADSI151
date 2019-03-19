@@ -32,6 +32,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/programacionComponente','ProgramacionComponenteController@index');
-Route::get('/PerfilesAlarmas','PerfilesAlarmasController@index');
+Route::get('/PerfilAlarma','PerfilAlarmaController@index');
 
 

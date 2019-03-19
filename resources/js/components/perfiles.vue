@@ -37,7 +37,7 @@
                                 </tr>
                             </thead>
                           <tbody>
-              <tr v-for="PerfilesAlarmas in arrayEstado" :key="PerfilesAlarmas.id">
+              <tr v-for="PerfilAlarma in arrayEstado" :key="PerfilAlarma.id">
                 <td>
                   <button
                     type="button"
@@ -56,7 +56,7 @@
                     <i class="icon-trash"></i>
                   </button>
                 </td>
-                <td v-text="PerfilesAlarmas.nombre"></td>
+                <td v-text="PerfilAlarma.nombre"></td>
                 <!--<td v-text="PerfilesAlarmas.idUsuario"></td>-->
                 
                  <!--<td>
@@ -192,7 +192,7 @@
 
       idUse(){
           
-         axios.get("/PerfilesAlarmas").then(function(response) {
+         axios.get("/PerfilAlarma").then(function(response) {
              
          
         })
@@ -212,7 +212,7 @@
       let me = this;
 
       axios
-        .get("/PerfilesAlarmas")
+        .get("/PerfilAlarma")
         .then(function(response) {
           me.arrayEstado = response.data;
         })

@@ -8,4 +8,5 @@ class PerfilAlarma extends Model
 {
   
     protected $table = 'perfilesyalarmas';
+    protected $fillable = ['id','nombre','idUsuario'];
 }

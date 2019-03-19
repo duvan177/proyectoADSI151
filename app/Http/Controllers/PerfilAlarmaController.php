@@ -19,8 +19,9 @@ class PerfilAlarmaController extends Controller
 
         
 
-        $perfilAlarma = PerfilAlarma::all(); 
-        return $perfilAlarma -> where('id','=',4);   
+        $id = Auth::id();
+        $perfilesyalarmas = PerfilAlarma::all();
+        return $perfilesyalarmas->where('idUsuario','=',$id); 
     }
 
     /**

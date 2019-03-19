@@ -2182,6 +2182,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2409,7 +2410,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     idUse: function idUse() {
-      axios.get("/PerfilesAlarmas").then(function (response) {}).catch(function (error) {
+      axios.get("/PerfilAlarma").then(function (response) {}).catch(function (error) {
         // handle error
         console.log(error);
       }).then(function () {// always executed
@@ -2417,7 +2418,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     listarCompo: function listarCompo() {
       var me = this;
-      axios.get("/PerfilesAlarmas").then(function (response) {
+      axios.get("/PerfilAlarma").then(function (response) {
         me.arrayEstado = response.data;
       }).catch(function (error) {
         // handle error
@@ -38372,12 +38373,12 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "tbody",
-                _vm._l(_vm.arrayEstado, function(PerfilesAlarmas) {
-                  return _c("tr", { key: PerfilesAlarmas.id }, [
+                _vm._l(_vm.arrayEstado, function(PerfilAlarma) {
+                  return _c("tr", { key: PerfilAlarma.id }, [
                     _vm._m(4, true),
                     _vm._v(" "),
                     _c("td", {
-                      domProps: { textContent: _vm._s(PerfilesAlarmas.nombre) }
+                      domProps: { textContent: _vm._s(PerfilAlarma.nombre) }
                     })
                   ])
                 }),
@@ -51266,7 +51267,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/proyectoADSI151/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/felipe/Escritorio/proyectoADSI151/resources/js/app.js */"./resources/js/app.js");
 
 
 /***/ })
