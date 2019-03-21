@@ -6921,7 +6921,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.modal-content{\r\n  width: 100% !important;\r\n  position: absolute !important;\n}\n.mostrar{\r\n  display: list-item !important;\r\n  opacity:1 !important;\r\n  position:absolute !important;\r\n  background-color:#3c29297a !important;\n}\r\n", ""]);
+exports.push([module.i, "\n.modal-content{\n  width: 100% !important;\n  position: absolute !important;\n}\n.mostrar{\n  display: list-item !important;\n  opacity:1 !important;\n  position:absolute !important;\n  background-color:#3c29297a !important;\n}\n", ""]);
 
 // exports
 
@@ -38204,7 +38204,7 @@ var staticRenderFns = [
         _c("div", { staticClass: "card" }, [
           _c("div", { staticClass: "card-header" }, [
             _c("i", { staticClass: "fa fa-align-justify" }),
-            _vm._v(" Categorías\r\n                        "),
+            _vm._v(" Categorías\n                        "),
             _c(
               "button",
               {
@@ -38217,7 +38217,7 @@ var staticRenderFns = [
               },
               [
                 _c("i", { staticClass: "icon-plus" }),
-                _vm._v(" Nuevo\r\n                        ")
+                _vm._v(" Nuevo\n                        ")
               ]
             )
           ]),
@@ -38299,7 +38299,7 @@ var staticRenderFns = [
                         },
                         [_c("i", { staticClass: "icon-pencil" })]
                       ),
-                      _vm._v("  \r\n                                        "),
+                      _vm._v("  \n                                        "),
                       _c(
                         "button",
                         {
@@ -38339,7 +38339,7 @@ var staticRenderFns = [
                         },
                         [_c("i", { staticClass: "icon-pencil" })]
                       ),
-                      _vm._v("  \r\n                                        "),
+                      _vm._v("  \n                                        "),
                       _c(
                         "button",
                         {
@@ -38379,7 +38379,7 @@ var staticRenderFns = [
                         },
                         [_c("i", { staticClass: "icon-pencil" })]
                       ),
-                      _vm._v("  \r\n                                        "),
+                      _vm._v("  \n                                        "),
                       _c(
                         "button",
                         {
@@ -38419,7 +38419,7 @@ var staticRenderFns = [
                         },
                         [_c("i", { staticClass: "icon-pencil" })]
                       ),
-                      _vm._v("  \r\n                                        "),
+                      _vm._v("  \n                                        "),
                       _c(
                         "button",
                         {
@@ -38459,7 +38459,7 @@ var staticRenderFns = [
                         },
                         [_c("i", { staticClass: "icon-pencil" })]
                       ),
-                      _vm._v(" \r\n                                        "),
+                      _vm._v(" \n                                        "),
                       _c(
                         "button",
                         {
@@ -39037,7 +39037,7 @@ var render = function() {
       _c("div", { staticClass: "card" }, [
         _c("div", { staticClass: "card-header" }, [
           _c("i", { staticClass: "fa fa-align-justify" }),
-          _vm._v(" Categorías\r\n                        "),
+          _vm._v(" Categorías\n                        "),
           _c(
             "button",
             {
@@ -39051,7 +39051,7 @@ var render = function() {
             },
             [
               _c("i", { staticClass: "icon-plus" }),
-              _vm._v(" Nuevo\r\n                        ")
+              _vm._v(" Nuevo\n                        ")
             ]
           )
         ]),
@@ -39258,7 +39258,7 @@ var staticRenderFns = [
         { staticClass: "btn btn-warning btn-sm", attrs: { type: "button" } },
         [_c("i", { staticClass: "icon-pencil" })]
       ),
-      _vm._v("  \r\n                  "),
+      _vm._v("  \n                  "),
       _c(
         "button",
         { staticClass: "btn btn-danger btn-sm", attrs: { type: "button" } },
@@ -51936,7 +51936,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Felipe Estrada\Desktop\ExpressVPN Generador keys\proyectoADSI151\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/felipe/Escritorio/proyectoADSI151/resources/js/app.js */"./resources/js/app.js");
 
 
 /***/ })
