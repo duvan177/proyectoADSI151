@@ -32,6 +32,7 @@ class PerfilAlarmaController extends Controller
     public function create()
     {
         //
+        return view('view.perfilalarmaCrear');
     }
 
     /**
@@ -43,6 +44,12 @@ class PerfilAlarmaController extends Controller
     public function store(Request $request)
     {
         //
+
+          $perfilesyalarmas = new PerfilAlarma;
+    $perfilesyalarmas->nombre = $request->nombre;
+   $perfilesyalarmas->idUsuario= $request->IdUsuario;
+    $perfilesyalarmas->save();
+    return redirect('perfilalarmaCrear');
     }
 
     /**

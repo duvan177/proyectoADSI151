@@ -11,7 +11,7 @@
                 <div class="card">
                     <div class="card-header">
                         <i class="fa fa-align-justify"></i> Categorías
-                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalNuevo">
+                        <button type="button" @click="registrarCategoria('PerfilAlarma','registrar')" class="btn btn-secondary" >
                             <i class="icon-plus"></i>&nbsp;Nuevo
                         </button>
                     </div>
@@ -42,16 +42,14 @@
                   <button
                     type="button"
                     class="btn btn-warning btn-sm"
-                    data-toggle="modal"
-                    data-target="#modalNuevo"
+                   
                   >
                     <i class="icon-pencil"></i>
                   </button> &nbsp;
                   <button
                     type="button"
                     class="btn btn-danger btn-sm"
-                    data-toggle="modal"
-                    data-target="#modalEliminar"
+                    
                   >
                     <i class="icon-trash"></i>
                   </button>
@@ -110,11 +108,11 @@
                 <!-- Fin ejemplo de tabla Listado -->
             </div>
             <!--Inicio del modal agregar/actualizar-->
-            <div class="modal fade" id="modalNuevo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
+            <div class="modal fade" :class="{'mostrar' : modal}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
                 <div class="modal-dialog modal-primary modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title">Editar Perfil</h4>
+                            <h4 class="modal-title" v-text="tituloModel"></h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                               <span aria-hidden="true">×</span>
                             </button>
@@ -124,16 +122,16 @@
                                 <div class="form-group row">
                                     <label class="col-md-3 form-control-label" for="text-input">nombre</label>
                                     <div class="col-md-9">
-                                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre de categoría">
+                                        <input type="text" v-model="nombre" class="form-control" placeholder="Nombre de categoría">
                                         <!--span class="help-block">(*) Ingrese el nombre de la categoría</span>-->
                                     </div>
                                 </div>
-                                <div class="form-group row">
+                                <!--<div class="form-group row">
                                     <label class="col-md-3 form-control-label" for="email-input">Descripción</label>
                                     <div class="col-md-9">
                                         <input type="email" id="descripcion" name="descripcion" class="form-control" placeholder="Enter Email">
                                     </div>
-                                </div>
+                                </div>-->
                             </form>
                         </div>
                         <div class="modal-footer">
@@ -184,7 +182,11 @@
     return {
       nombre: " ",
       estado: " ",
-      arrayEstado: []
+    
+      arrayEstado: [],
+     
+      modal : 0,
+      tituloModal: ""
     };
   },
 
@@ -225,8 +227,55 @@
         });
     }
   },
+  
+  registrarCategoria(modelo, data){
+
+    if(modelo=="PerfiAlarma"){
+ if(accion=="registrar"){
+     this.model=1;
+     this.nombre='';
+     tituloModal='Registrar Componente';
+ }else if(accion=="actualizar"){
+
+ }
+    }
+
+  },
+  /* abrirModal(modelo, accion, data = []){
+switch(modelo){
+case "PerfilAlarma":
+{
+  switch(accion){
+    case 'registrar':
+    {
+     this.model=1;
+     this.nombre='';
+     
+     tituloModal='Registrar Componente';
+     break;
+    }
+    case 'actualizar': {
+break;
+    }
+  }
+}
+}
+  },*/
   mounted() {
     this.listarCompo();
+  
   }
 };
 </script>
+<style>
+.modal-content{
+  width: 100% !important;
+  position: absolute !important;
+}
+.mostrar{
+  display: list-item !important;
+  opacity:1 !important;
+  position:absolute !important;
+  background-color:#3c29297a !important;
+}
+</style>

@@ -33,5 +33,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/programacionComponente','ProgramacionComponenteController@index');
 Route::get('/PerfilAlarma','PerfilAlarmaController@index');
+Route::resource('componentes','ControllerCrud');
+
+Route::delete('componentes/{id}','ControllerCrud@destroy');
+
+Route::post('componentes/{id}','ControllerCrud@update'); 
 
 
